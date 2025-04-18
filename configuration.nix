@@ -23,6 +23,7 @@
 
   # Set your time zone.
   time.timeZone = "Asia/Jayapura";
+  time.hardwareClockInLocalTime = true;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -76,6 +77,12 @@
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
+  # enable bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
+  services.blueman.enable = true;
+	
   # Enable sound.
   sound.enable = true;
   #hardware.pulseaudio.enable = true;
